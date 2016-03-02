@@ -1,0 +1,189 @@
+*{
+	box-sizing:border-box;
+}
+html{
+	font-family: 'Lato', sans-serif;
+}
+
+
+body{
+	background-color:  #000000;
+}
+
+h1,h3{
+	text-align: center;
+	color: #ffffff;
+}
+
+h1 span{
+	background-color: #000000;
+	padding: 2px;
+	margin-bottom: 10px;
+	font-size: 48px;
+}
+
+.board, .palette, .control-panel, .rules{
+padding: 5px;
+width: 454px;
+margin-right: auto;
+margin-left: auto;
+background-color: #000000;
+border-radius: 10px;
+}
+
+.rules{
+	border: none;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.rules h2{
+	margin: 10px auto;
+}
+
+.rules ol{
+	padding-left: 5px;
+	margin: 0 auto;
+}
+
+.rules li{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.board{
+	height: 454px;
+	border: 2px solid #ffffff;
+}
+
+.colour-1{
+	color: #ff0000;
+}
+
+.colour-2{
+	color: #ffff00;
+}
+
+.colour-3{
+	color: #00ff00;
+}
+
+.colour-4{
+	color: #00ffff;
+}
+
+.colour-5{
+	color: #0000ff;
+}
+
+.colour-6{
+	color: #ff00ff;
+}
+
+.fast{
+	color: #ffffff;
+}
+
+[class*= 'colour-']{
+	letter-spacing: -6px;
+	background-color: transparent;
+}
+
+.palette, .control-panel{
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+.tile {
+	width: 100px;
+	height: 100px;
+	background-color: #ffffff;
+	margin: 5px;
+	border-radius: 10px;
+	float: left;
+}
+
+.paint{
+	width: 63px;
+	height: 60px;
+	background-color: #ffffff;
+	margin: 5px;
+	float: left;
+	border-radius: 20px;
+}
+
+
+
+#timer{
+	float: right;
+}
+
+.control-panel{
+	padding: 0;
+	background-color: transparent;
+}
+
+#timer span, #activate, #score span{
+	display: inline-block;
+	height: 100%;
+	text-align: center;
+	font-weight: bolder;
+	padding-top: 18px;
+	background-color: transparent;
+}
+
+
+#timer, #activate, #score{
+	height: 80%;
+	margin: 5px;
+	background-color: #ffffff;
+	color: #000000;
+	width: 31%;
+	font-size: 25px;
+	border-radius: 10px;
+	float: left;
+	font-variant: small-caps;
+}
+
+#score{
+	padding-left: 10px;
+}
+
+#activate{
+	float: left;
+	padding: 0;
+	background-color: #000000;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+}
+
+#activate:hover{
+	opacity: 0.7;
+}
+
+.paint:hover{
+	border: 1px solid #ffffff;
+}
+
+#minutes, #seconds {
+	width: 40%;
+}
+
+
+.time-over{
+  background-color:#ff0000 !important;
+}
+
+.win{
+  background-color:#00ff00 !important;
+}
+
+
+
+
+.control-panel:after{
+	content:'';
+	clear: both;
+	height: 0; 
+	display:block;
+}

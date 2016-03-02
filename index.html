@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id = 'container'>
+	<h1> <span>
+		<span class = 'colour-1'>C</span>
+		<span class = 'colour-2'>O</span>
+		<span class = 'colour-3'>L</span>
+		<span class = 'colour-4'>O</span>
+		<span class = 'colour-5'>U</span>
+		<span class = 'colour-6'>R</span>
+		<span class = 'fast'>FAST</span>
+	</span>
+	<h3>Fill in all the tiles before the timer runs out.<h3>
+	<div class = 'control-panel'>
+		<button id = 'activate' onclick = 'startNewGame()'>
+			New Game
+		</button>
+
+		<div id = 'timer'>
+			<span id = 'minutes'>00</span>
+			<span id = 'colon'>:</span>
+			<span id = 'seconds'>30</span>
+		</div>
+
+		<div id = 'score'>
+			<span> Score: </span>
+			<span id = 'score-value'>0</span>
+		</div>
+	</div>
+
+</div>
+<div class = 'rules'>
+	<h2>How it works</h2>
+	<ol>
+		<li>Click on a colour to select it and click on a tile to paint it but watch out since tiles will fade at random and need to be filled again.</li>
+		<li>The position of the colours will shuffle each time a colour is selected and the same colour can't be picked twice consecutively.</li>
+		<li>A tile can't have the same colour as any other tile with which it shares an edge. </li>
+	</ol>
+</div>
+<!--div class = 'palette'>
+<div class = 'paint'></div>
+<div class = 'paint'></div>
+<div class = 'paint'></div>
+<div class = 'paint'></div>
+<div class = 'paint'></div>
+<div class = 'paint'></div>
+</div-->
+<!--div class = 'board'>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+<div class = 'tile'></div>
+</div-->
+<script type="text/javascript" src ='script.js'>
+</script>
+<!--script>
+var myArr = [1,2,3,4,5];
+myArr = myArr.slice(0,2).concat(myArr.slice(3));
+console.log(myArr);
+</script-->
+</body>
+
+</html>
