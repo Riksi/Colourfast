@@ -389,7 +389,7 @@ Game.prototype.stop = function(){
 
 
 function Palette(colours){
-	this.originalColours = colours;
+	this.originalColours = colours.slice(0);
 	this.colours = colours;
 	this.number = colours.length;
 	this.previous  = null;
