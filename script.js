@@ -1,3 +1,10 @@
+//TODO: lots of things:
+//-need to separate things between the objects 
+//-some hacky elements
+//-separate into modules
+//-more...
+
+
 //Change it so that the fade action must pass through the changeGrid.
 //This is to ensure that 
 
@@ -9,22 +16,6 @@
 //>Is sent position of tile
 //Store in this form
 //var grid = {1:{1: [element], 2: [element],...}, ...}
-
-
-//(((1+2)*a)+b) + (k/3) - 5/((7*x) + 9)
-
-
-//Base case is c/v - just return
-//Start from end (right side)
-//If first term is c/v, consider operator on its left
-//If first term is bracket, find position of closing bracket and consider that on its left
-//If +/- break and evaluate stuff on either side
-//Else, while within the array, repeat the above for terms on the other side of the sign
-//Make a record during all of these of any * or / 
-//If you get to the end, then if any * or /, split at that closest to the end (i.e. right side).
-//You should set a to the result of evaluating the left expression and b to that of evaluating the right
-//The operator should be + or -, or * or / as appropriate
-//If no * or /, then we either have c/v or an expression within brackets so if brackets get rid of first opening and closing and return the result of evaluating this.
 
 function GameView(grid,palette,manager){
 	//this.paints = document.getElementsByClassName('paint');
@@ -1127,7 +1118,7 @@ function testGameView(){
 //testGameView();
 //mgr.setup()
 
-var mgr = new GameManager(['#ff0000','#00ff00','#0000ff','#ffff00','#00ffff','#ff00ff'],'#ffffff');
+var mgr = new GameManager(['#ff0000','#ffff00','#00ff00','#00ffff','#0000ff','#ff00ff'],'#ffffff');
 mgr.setup();
 function startNewGame(){
 	mgr.startGame();
