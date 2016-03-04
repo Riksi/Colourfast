@@ -4,9 +4,11 @@
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
+<div id = 'modal-background'>
+</div>
+<div id = 'outer-container'>
 <div id = 'container'>
-	<h1> <span>
+<h1> <span>
 		<span class = 'colour-1'>C</span>
 		<span class = 'colour-2'>O</span>
 		<span class = 'colour-3'>L</span>
@@ -15,32 +17,37 @@
 		<span class = 'colour-6'>R</span>
 		<span class = 'fast'>FAST</span>
 	</span>
-	<h3>Fill in all the tiles before the timer runs out.<h3>
-	<div class = 'control-panel'>
-		<button id = 'activate' onclick = 'startNewGame()'>
-			New Game
-		</button>
+</h1>
+	<h3 class = 'row'>
+		Fill in all the tiles before the timer runs out
+		<button id = 'help' class = 'page-button'> ? </button>
+	<h3>
+		<div class = 'control-panel'>
+			<button id = 'activate' class = 'page-button' onclick = 'startNewGame()'>
+				New Game
+			</button>
 
-		<div id = 'timer'>
-			<span id = 'minutes'>00</span>
-			<span id = 'colon'>:</span>
-			<span id = 'seconds'>30</span>
+			<div id = 'timer'>
+				<span id = 'minutes'>00</span>
+				<span id = 'colon'>:</span>
+				<span id = 'seconds'>30</span>
+			</div>
+
+			<div id = 'score'>
+				<span> Score: </span>
+				<span id = 'score-value'>0</span>
+			</div>
 		</div>
-
-		<div id = 'score'>
-			<span> Score: </span>
-			<span id = 'score-value'>0</span>
-		</div>
-	</div>
-
+	</h3>
 </div>
-<div class = 'rules'>
-	<h2>How it works</h2>
+<div class = 'rules' id = 'rules'>
+	<h2>How it works <button id = 'close' class = 'page-button'> X </button> </h2>
 	<ol>
 		<li>Click on a colour to select it and click on a tile to paint it but watch out since tiles will fade at random and need to be filled again.</li>
 		<li>The position of the colours will shuffle each time a colour is selected and the same colour can't be picked twice consecutively.</li>
 		<li>A tile can't have the same colour as any other tile with which it shares an edge. </li>
 	</ol>
+</div>
 </div>
 <!--div class = 'palette'>
 <div class = 'paint'></div>
@@ -69,6 +76,8 @@
 <div class = 'tile'></div>
 </div-->
 <script type="text/javascript" src ='script.js'>
+</script>
+<script type="text/javascript" src ='help.js'>
 </script>
 <!--script>
 var myArr = [1,2,3,4,5];
