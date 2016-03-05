@@ -1,2 +1,2 @@
 # Colourfast
-View at http://riksi.github.io/Colourfast/
+Play it at http://riksi.github.io/Colourfast/
